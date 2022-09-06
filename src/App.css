@@ -6,10 +6,12 @@
 }
 
 .logo {
-  /* width: 100vw;
-  height: 100vh; */
-  color: red;
-  background-color: blue;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: white;
+    /* filter: invert(1); */
+
 }
 
 .App-logo {

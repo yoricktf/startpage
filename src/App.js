@@ -18,24 +18,22 @@ import './App.css';
 
 function App() {
 
-  const images = [bbc, f1, github, gmail, googlecalendar, linkedin, netflix, newyorktimes, premierleague, reddit, youtube];
+  const websiteObjects = [{ image: bbc, url: 'https://www.bbc.com', color: '' }, { image: f1, url: 'https://www.formula1.com', color: '' }, { image: github, url: 'https://www.github.com', color: '' }, { image: gmail, url: 'https://www.gmail.com', color: '' }, { image: googlecalendar, url: 'https://www.googlecalendar.com', color: '' }, { image: linkedin, url: 'https://www.linkedin.com', color: '' }, { image: netflix, url: 'https://www.netflix.com', color: '' }, { image: newyorktimes, url: 'https://www.nytimes.com/', color: '' }, { image: premierleague, url: 'https://www.premierleague.com', color: '' }, { image: reddit, url: 'https://www.reddit.com', color: '' }, { image: youtube, url: 'https://www.youtube.com', color: '' }];
 
 
+  const goToSite = (e) => {
+    console.log(e);
+    window.open(e, '_blank');
 
-
-
-
-
-
-
-
-
-
-
-
-
+  }
   return (
     <div className="App">
+      {websiteObjects.map((websiteObject) => (
+        <>
+          <img onClick={e => goToSite(e.target.id)} src={websiteObject.image} alt='' id={websiteObject.url} className='logo' />
+        </>
+      ))}
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
