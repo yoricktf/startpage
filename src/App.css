@@ -1,5 +1,15 @@
+  /* linkedin #0A66C2 */
+
+
 .App {
   text-align: center;
+}
+
+.logo {
+  /* width: 100vw;
+  height: 100vh; */
+  color: red;
+  background-color: blue;
 }
 
 .App-logo {
