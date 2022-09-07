@@ -1,5 +1,8 @@
+import React, { useEffect, useState } from "react";
 import './App.css';
 import Bookmarks from './Components/Bookmarks/Bookmarks';
+import Time from './Components/Time/Time';
+import Weather from './Components/Weather/Weather';
 // importing images below
 import bbc from './bbc.svg';
 import f1 from './f1.svg';
@@ -14,7 +17,9 @@ import reddit from './reddit.svg';
 import youtube from './youtube.svg';
 import premiumize from './premiumize.svg';
 
+
 function App() {
+
   const websiteObjects = [
     { name: 'bbc', id: 1, image: bbc, url: 'https://www.bbc.com', },
     { name: 'f1', id: 2, image: f1, url: 'https://www.formula1.com', },
@@ -33,6 +38,8 @@ function App() {
 
   return (
     <div className="App">
+      <Time />
+      <Weather />
       <Bookmarks data={[...websiteObjects]} />
     </div>
   );
