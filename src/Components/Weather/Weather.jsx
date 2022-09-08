@@ -2,25 +2,31 @@ import React, { useEffect, useState } from "react";
 
 
 const Weather = () => {
+
+
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
-
-  // const [lat, setLat] = useState([52.520008]);
-  // const [long, setLong] = useState([13.404954]);
-
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude);
-      setLong(position.coords.longitude);
-    });
+    const fetchData = async () => {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setLat(position.coords.latitude);
+        setLong(position.coords.longitude);
+        console.log(lat, long);
+      });
 
-    console.log("Latitude is:", lat)
-    console.log("Longitude is:", long)
-  }, [lat, long]);
+      await fetch(`${process.env.REACT_APP_API_URL}lat=${lat}&lon=${long}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
+        .then(res => res.json())
+        .then(result => {
+          console.log(result)
+          setData(result)
+        });
+    }
+    fetchData();
+  }, [lat, long])
 
-
-
+  console.log(data)
 
   return (
     <div>weather</div>
