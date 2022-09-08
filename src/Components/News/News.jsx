@@ -11,14 +11,12 @@ const News = () => {
     })
   }, []);
 
-  console.log(articles);
-
   return (
     <div>
       <h1>News</h1>
       {articles.map(article => {
         return (
-          <div>
+          <div key={article.data.id}>
             <a href={article.data.url}>
               <h4>{article.data.title}</h4>
               <h6>{article.data.domain}</h6>
