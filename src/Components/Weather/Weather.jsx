@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 const Weather = () => {
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
+  const [temp, setTemp] = useState()
+  const [maxTemp, setMaxTemp] = useState()
+  const [minTemp, setMinTemp] = useState()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,6 +21,9 @@ const Weather = () => {
         .then(result => {
           console.log(result)
           setData(result)
+          setTemp(result.main.temp)
+          setMaxTemp(result.main.temp_max)
+          setMinTemp(result.main.temp_min)
         });
     }
     fetchData();
@@ -27,9 +33,21 @@ const Weather = () => {
 
   return (
     <div>
-      <h5>{data.main.temp_max}℃</h5>
-      <h3>{data.main.temp}℃</h3>
-      <h5>{data.main.temp_min}℃</h5>
+
+
+      {data ? (
+        <>
+          <h5>{maxTemp}℃</h5>
+          <h3>{temp}℃</h3>
+          <h5>{minTemp}℃</h5>
+        </>
+      ) : (
+        <div>Loading...</div>
+      )}
+
+
+
+
     </div>
   )
 }
