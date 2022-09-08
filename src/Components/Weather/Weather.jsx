@@ -13,13 +13,11 @@ const Weather = () => {
       navigator.geolocation.getCurrentPosition(function (position) {
         setLat(position.coords.latitude);
         setLong(position.coords.longitude);
-        console.log(lat, long);
       });
 
       await fetch(`${process.env.REACT_APP_API_URL}lat=${lat}&lon=${long}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
         .then(res => res.json())
         .then(result => {
-          console.log(result)
           setData(result)
           setTemp(result.main.temp)
           setMaxTemp(result.main.temp_max)
@@ -29,25 +27,11 @@ const Weather = () => {
     fetchData();
   }, [lat, long])
 
-  console.log(data)
-
   return (
     <div>
-
-
-      {data ? (
-        <>
-          <h5>{maxTemp}℃</h5>
-          <h3>{temp}℃</h3>
-          <h5>{minTemp}℃</h5>
-        </>
-      ) : (
-        <div>Loading...</div>
-      )}
-
-
-
-
+      <h5>{maxTemp}℃</h5>
+      <h3>{temp}℃</h3>
+      <h5>{minTemp}℃</h5>
     </div>
   )
 }

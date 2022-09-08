@@ -14,9 +14,12 @@ const Time = () => {
     };
   }, []);
 
+
+
   return (
     <>
       <h1>{time.toLocaleTimeString('de-DE')}</h1>
+      <h1>{time.toDateString('de-DE')}</h1>
     </>
   )
 }
