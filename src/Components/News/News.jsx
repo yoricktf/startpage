@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 const News = () => {
-  const [articles, setArticles] = useState([]);
+  const [seconds, setSeconds] = useState(0)
+  const [articles, setArticles] = useState([{ data: { title: '', domain: '', url: '', id: '' } }]);
+
 
   useEffect(() => {
     fetch('https://www.reddit.com/r/worldnews/.json').then(res => {
@@ -11,19 +13,28 @@ const News = () => {
     })
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(second => (second === articles.length ? 0 : second + 1));
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    console.log("seconds", seconds);
+  }, [seconds]);
+
+
+
   return (
     <div>
       <h1>News</h1>
-      {articles.map(article => {
-        return (
-          <div key={article.data.id}>
-            <a href={article.data.url}>
-              <h4>{article.data.title}</h4>
-              <h6>{article.data.domain}</h6>
-            </a>
-          </div>
-        )
-      })}
+      <div key={articles[seconds].data.id}>
+        <a href={articles[seconds].data.url}>
+          <h4>{articles[seconds].data.title}</h4>
+          <h6>{articles[seconds].data.domain}</h6>
+        </a>
+      </div>
     </div>
 
   )
