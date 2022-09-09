@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import './News.css';
+import Weather from '../Weather/Weather';
 
 const News = () => {
   const [seconds, setSeconds] = useState(0)
@@ -21,14 +23,14 @@ const News = () => {
   }, []);
 
   return (
-    <div>
-      <h1>News</h1>
-      <div key={articles[seconds].data.id}>
-        <a href={articles[seconds].data.url}>
+    <div className="newsAndWeather">
+      <div className="newsTicker">
+        <a key={articles[seconds].data.id} href={articles[seconds].data.url}>
           <h4>{articles[seconds].data.title}</h4>
           <h6>{articles[seconds].data.domain}</h6>
         </a>
       </div>
+      <Weather />
     </div>
 
   )

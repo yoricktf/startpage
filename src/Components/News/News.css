@@ -1,0 +1,25 @@
+.newsAndWeather{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+ .newsAndWeather h4,
+ .newsAndWeather h6{
+  margin: 0;
+
+}
+
+.newsTicker a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.newsTicker {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
