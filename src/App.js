@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <Time />
-      <Weather />
+      {/* weather is imported through the news widget */}
       <News />
       <Bookmarks data={[...websiteObjects]} />
     </div>
