@@ -20,12 +20,6 @@ const News = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    console.log("seconds", seconds);
-  }, [seconds]);
-
-
-
   return (
     <div>
       <h1>News</h1>
