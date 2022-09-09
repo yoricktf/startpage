@@ -1,0 +1,66 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  transition: color .3s linear, box-shadow .4s ease-in;
+}
+
+.reddit {
+  border-radius: 50%;
+}
+
+.github {
+  border-radius: 50%;
+}
+
+.bbc:hover {
+  box-shadow: inset 0 -100px 0 0 #B80000;
+}
+
+.f1:hover {
+  box-shadow: inset 0 -100px 0 0 #E10600;
+}
+
+.github:hover {
+  box-shadow: inset 0 -100px 0 0 #1817175c;
+  border-radius: 50%;
+}
+
+.gmail:hover {
+  box-shadow: inset 0 -100px 0 0 #EA4335;
+}
+
+.googlecalendar:hover {
+  box-shadow: inset 0 -100px 0 0 #4285F4;
+}
+
+.linkedin:hover {
+  box-shadow: inset 0 -100px 0 0 #0A66C2;
+}
+
+.netflix:hover {
+  box-shadow: inset 0 -100px 0 0 #E50914;
+}
+
+.nyTimes:hover {
+  box-shadow: inset 0 -100px 0 0 #0000005c;
+}
+
+.premierLeague:hover {
+  box-shadow: inset 0 -100px 0 0 #360d3abb;
+}
+
+.premiumize:hover {
+  box-shadow: inset 0 -100px 0 0 #AA0000;
+}
+
+.reddit:hover {
+  box-shadow: inset 0 -100px 0 0 #FF4500;
+  border-radius: 50%;
+}
+
+.youtube:hover {
+  box-shadow: inset 0 -100px 0 0 #FF0000;
+}

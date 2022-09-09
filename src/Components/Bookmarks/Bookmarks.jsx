@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import './Bookmarks.css'
 
 const Bookmarks = (props) => {
   const websiteObjects = props.data;
