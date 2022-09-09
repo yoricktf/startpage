@@ -1,0 +1,14 @@
+.weather{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.temperatures > h3{
+  margin: 5px 0;
+}
+
+.temperatureRange {
+  color: grey;
+  margin: 0;
+}
