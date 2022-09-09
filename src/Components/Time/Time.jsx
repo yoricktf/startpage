@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react'
+import './Time.css'
 
 const Time = () => {
   const [time, setTime] = useState(new Date())
@@ -17,10 +18,10 @@ const Time = () => {
 
 
   return (
-    <>
-      <h1>{time.toLocaleTimeString('de-DE')}</h1>
-      <h1>{time.toDateString('de-DE')}</h1>
-    </>
+    <div className='DateAndTime'>
+      <h3>{time.toDateString('de-DE')}</h3>
+      <h3>{time.toLocaleTimeString('de-DE')}</h3>
+    </div>
   )
 }
 
