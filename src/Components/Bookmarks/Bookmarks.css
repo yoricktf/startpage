@@ -2,65 +2,70 @@
   width: 100px;
   height: 100px;
   margin: 10px;
-  background-color: white;
-  border-radius: 10px;
+transition: color .3s linear, box-shadow .4s ease-in;
+}
+
+
+svg {
   transition: color .3s linear, box-shadow .4s ease-in;
 }
 
-.reddit {
-  border-radius: 50%;
-}
-
-.github {
-  border-radius: 50%;
-}
-
 .bbc:hover {
-  box-shadow: inset 0 -100px 0 0 #B80000;
+  /* box-shadow: inset 0 -100px 0 0 #B80000; */
+  filter: invert(9%) sepia(82%) saturate(6695%) hue-rotate(11deg) brightness(92%) contrast(117%);
 }
 
 .f1:hover {
-  box-shadow: inset 0 -100px 0 0 #E10600;
+  /* box-shadow: inset 0 -100px 0 0 #E10600; */
+  filter: invert(10%) sepia(86%) saturate(7260%) hue-rotate(8deg) brightness(97%) contrast(107%);
 }
 
 .github:hover {
-  box-shadow: inset 0 -100px 0 0 #1817175c;
-  border-radius: 50%;
+  /* box-shadow: inset 0 -100px 0 0 #181717; */
+filter: invert(6%) sepia(10%) saturate(156%) hue-rotate(315deg) brightness(106%) contrast(95%);
 }
 
 .gmail:hover {
-  box-shadow: inset 0 -100px 0 0 #EA4335;
+  /* box-shadow: inset 0 -100px 0 0 #EA4335; */
+  filter: invert(55%) sepia(72%) saturate(3005%) hue-rotate(327deg) brightness(82%) contrast(129%);
 }
 
 .googlecalendar:hover {
-  box-shadow: inset 0 -100px 0 0 #4285F4;
+  /* box-shadow: inset 0 -100px 0 0 #4285F4; */
+  filter: invert(42%) sepia(98%) saturate(754%) hue-rotate(194deg) brightness(95%) contrast(103%);
 }
 
 .linkedin:hover {
-  box-shadow: inset 0 -100px 0 0 #0A66C2;
+  /* box-shadow: inset 0 -100px 0 0 #0A66C2; */
+  filter: invert(20%) sepia(97%) saturate(2373%) hue-rotate(198deg) brightness(100%) contrast(92%);
 }
 
 .netflix:hover {
-  box-shadow: inset 0 -100px 0 0 #E50914;
+  /* box-shadow: inset 0 -100px 0 0 #E50914; */
+  filter: invert(14%) sepia(66%) saturate(7072%) hue-rotate(352deg) brightness(88%) contrast(104%);
 }
 
 .nyTimes:hover {
-  box-shadow: inset 0 -100px 0 0 #0000005c;
+  /* box-shadow: inset 0 -100px 0 0 #000000; */
+  filter: invert(0%) sepia(0%) saturate(8%) hue-rotate(253deg) brightness(100%) contrast(100%);
 }
 
 .premierLeague:hover {
-  box-shadow: inset 0 -100px 0 0 #360d3abb;
+  /* box-shadow: inset 0 -100px 0 0 #360d3a; */
+  filter: invert(12%) sepia(26%) saturate(2907%) hue-rotate(261deg) brightness(92%) contrast(107%);
 }
 
 .premiumize:hover {
-  box-shadow: inset 0 -100px 0 0 #AA0000;
+  /* box-shadow: inset 0 -100px 0 0 #AA0000; */
+  filter: invert(9%) sepia(83%) saturate(6943%) hue-rotate(17deg) brightness(89%) contrast(120%);
 }
 
 .reddit:hover {
-  box-shadow: inset 0 -100px 0 0 #FF4500;
-  border-radius: 50%;
+  /* box-shadow: inset 0 -100px 0 0 #FF4500; */
+  filter: invert(34%) sepia(76%) saturate(3911%) hue-rotate(1deg) brightness(102%) contrast(105%);
 }
 
 .youtube:hover {
-  box-shadow: inset 0 -100px 0 0 #FF0000;
+  /* box-shadow: inset 0 -100px 0 0 #FF0000; */
+  filter: invert(11%) sepia(100%) saturate(6290%) hue-rotate(0deg) brightness(100%) contrast(111%);
 }
