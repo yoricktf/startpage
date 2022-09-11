@@ -8,8 +8,14 @@ import News from './Components/News/News';
 function App() {
 
 
+
+
+
+
   return (
     <div className="App">
+      <div Id="tempIndicator">
+      </div>
       <Time />
       {/* weather is imported through the news widget */}
       <News />

@@ -18,11 +18,14 @@ svg {
   transition: .2s;
   width: 100px;
   height: 100px;
+
 }
 
 svg:hover {
+  /* background-color: green; */
   transform: scale(1.1);
   border: solid 1px #000;
+  /* fill-opacity: 90%; */
 }
 
 .bbc:hover {
