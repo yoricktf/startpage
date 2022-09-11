@@ -28,6 +28,22 @@ const Weather = () => {
     fetchData();
   }, [lat, long])
 
+  useEffect(() => {
+    if (temp < 10) {
+      console.log('less than 20')
+      document.getElementById('tempIndicator').style.background = "red"
+      // document.body.getElementsByClassName('App').style.backgroundColor = '#99C262'
+    } else if (temp < 20) {
+      document.getElementById('tempIndicator').style.cssText = "background-color: green"
+      console.log('between 20 and 30')
+    } else if (temp < 30) {
+      document.getElementById('tempIndicator').style.backgroundColor = 'blue'
+      console.log('between 30 and 40')
+    } else if (temp > 30) {
+      document.getElementById('tempIndicator').style.backgroundColor = 'yellow'
+    }
+  }, [temp])
+
   return (
     <div className='weather'>
       <img src={`${process.env.REACT_APP_ICON_URL}${icon}.png`} alt="" />

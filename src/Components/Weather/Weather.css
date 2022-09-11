@@ -12,3 +12,8 @@
   color: grey;
   margin: 0;
 }
+
+#tempIndicator {
+  width: 100vw;
+  height: 5px;
+}
