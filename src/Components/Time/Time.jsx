@@ -18,10 +18,14 @@ const Time = () => {
 
 
   return (
-    <div className='DateAndTime'>
-      <h3>{time.toDateString('de-DE')}</h3>
-      <h3>{time.toLocaleTimeString('de-DE')}</h3>
+
+    <div className='dateAndTimeComponent'>
+      <div className='dateAndTime'>
+        <h2>{time.toLocaleTimeString('de-DE')}</h2>
+        <h6>{time.toDateString('de-DE')}</h6>
+      </div>
     </div>
+
   )
 }
 

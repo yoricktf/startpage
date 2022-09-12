@@ -1,5 +1,10 @@
-.DateAndTime {
+.dateAndTimeComponent {
 display: flex;
-justify-content: space-between;
-padding: 0 20px;
+justify-content: center;
+padding: 5px ;
+}
+
+.dateAndTime > * {
+text-align: center;
+ margin: 0;
 }
