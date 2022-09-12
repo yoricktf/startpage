@@ -27,31 +27,28 @@ const Bookmarks = (props) => {
     { name: 'premierLeague', id: 9, image: premierLeague, url: 'https://www.premierleague.com', },
     { name: 'premiumize', id: 12, image: premiumize, url: 'https://www.premiumize.me', },
     { name: 'reddit', id: 10, image: reddit, url: 'https://www.reddit.com', },
-    { name: 'youtube', id: 11, image: youtube, url: 'https://www.youtube.com', },
+    { name: 'youtube', id: 11, image: youtube, url: 'chrome://bookmarks/', },
   ];
 
   // const websiteObjects = props.data;
 
   const goToSite = (e) => {
     console.log(e);
-    window.open(e);
+    // window.open(e);
   }
 
   return (
     <div className='bookmarksPalet'>
       {websiteObjects.map((websiteObject) => (
+        <div key={websiteObject.id} >
+          <svg onClick={e => goToSite(e.target.id)} id={websiteObject.url} className={`logo ${websiteObject.name}`}>
+            <image
+              href={websiteObject.image}
+              alt={`${websiteObject.name}'s logo and link`}
+            />
+          </svg>
 
-        <svg>
-          <image
-            href={websiteObject.image}
-            key={websiteObject.id}
-            alt={`${websiteObject.name}'s logo and link`}
-            onClick={e => goToSite(e.target.id)}
-            id={websiteObject.url}
-            className={`logo ${websiteObject.name}`}
-            style={{ fill: "lightblue", width: "100px", height: "100px" }}
-          />
-        </svg>
+        </div>
       ))}
 
     </div>

@@ -1,5 +1,6 @@
 .bookmarksPalet {
   width: 100%;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -13,7 +14,6 @@
 
 svg {
   border: solid 1px #fff;
-  margin: 20px;
   padding: 75px;
   transition: .2s;
   width: 100px;
@@ -21,11 +21,15 @@ svg {
 
 }
 
+image {
+  height: 100px;
+  width: 100px;
+}
+
 svg:hover {
-  /* background-color: green; */
   transform: scale(1.1);
   border: solid 1px #000;
-  /* fill-opacity: 90%; */
+  /* filter: invert(9%) sepia(82%) saturate(6695%) hue-rotate(11deg) brightness(92%) contrast(117%); */
 }
 
 .bbc:hover {
