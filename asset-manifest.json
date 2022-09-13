@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.459be308.css",
+    "main.js": "/static/js/main.42de4222.js",
+    "static/js/787.c3c264d4.chunk.js": "/static/js/787.c3c264d4.chunk.js",
+    "static/media/premierleague.svg": "/static/media/premierleague.cd5a9dcb0e38a8ada24c0ebebb339b63.svg",
+    "static/media/premiumize.svg": "/static/media/premiumize.ad7870c558aeb93b8a8d3fbf5a56f6bd.svg",
+    "static/media/googlecalendar.svg": "/static/media/googlecalendar.e8317e61379177e4e45804a53d6faee7.svg",
+    "static/media/reddit.svg": "/static/media/reddit.d1626eaae89ce27880884f43678e977b.svg",
+    "static/media/newyorktimes.svg": "/static/media/newyorktimes.15df6567eb0df6f639b2a67ae013f4d5.svg",
+    "static/media/bbc.svg": "/static/media/bbc.231268461d7723b93c878953951a7175.svg",
+    "static/media/github.svg": "/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.98956d298e14a6384fdb39c42269f2f2.svg",
+    "static/media/youtube.svg": "/static/media/youtube.7f4cdfacde8ccbd90dc0928aff24af16.svg",
+    "static/media/f1.svg": "/static/media/f1.5718575c86b8c07a6ef5daf5b5dd30fa.svg",
+    "static/media/gmail.svg": "/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
+    "static/media/netflix.svg": "/static/media/netflix.994a3b8b9897d2b5baabfa6a5054bff8.svg",
+    "main.459be308.css.map": "/static/css/main.459be308.css.map",
+    "main.42de4222.js.map": "/static/js/main.42de4222.js.map",
+    "787.c3c264d4.chunk.js.map": "/static/js/787.c3c264d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.459be308.css",
+    "static/js/main.42de4222.js"
+  ]
+}
