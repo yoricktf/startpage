@@ -20,7 +20,7 @@ const News = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSeconds(second => (second === /*articles.length -1*/ 26 ? 0 : second + 1));
-    }, 4000);
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 

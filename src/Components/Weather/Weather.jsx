@@ -30,13 +30,13 @@ const Weather = () => {
 
   useEffect(() => {
     if (temp < 10) {
-      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(45deg, #424242 10%, #00158d) ;"
+      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(90deg, #424242 10%, #00158d) ;"
     } else if (temp < 20) {
-      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(45deg, #00158d 20%, #006803) ;"
+      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(90deg, #00158d 10%, #006803) ;"
     } else if (temp < 30) {
-      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(45deg, #006803 20%, #cd6b10) ;"
+      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(90deg, #006803 10%, #cd6b10) ;"
     } else if (temp > 30) {
-      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(45deg, #cd6b10 20%, #ff0000) ;"
+      document.getElementById('tempIndicator').style.cssText = "background: linear-gradient(90deg, #cd6b10 10%, #ff0000) ;"
     }
   }, [temp])
 
