@@ -10,6 +10,7 @@
   width: 100px;
   height: 100px;
   filter: opacity(70%);
+  margin-top: 20px;
 }
 
 svg {
