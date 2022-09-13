@@ -5,7 +5,7 @@ const Weather = () => {
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
   const [icon, setIcon] = useState()
-  const [temp, setTemp] = useState(21)
+  const [temp, setTemp] = useState()
   const [maxTemp, setMaxTemp] = useState()
   const [minTemp, setMinTemp] = useState()
 
@@ -19,7 +19,7 @@ const Weather = () => {
       await fetch(`${process.env.REACT_APP_API_URL}lat=${lat}&lon=${long}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
         .then(res => res.json())
         .then(result => {
-          // setTemp(result.main.temp)
+          setTemp(result.main.temp)
           setMaxTemp(result.main.temp_max)
           setMinTemp(result.main.temp_min)
           setIcon(result.weather[0].icon)
