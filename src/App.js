@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from "react";
 import './App.css';
 import Bookmarks from './Components/Bookmarks/Bookmarks';
 import Time from './Components/Time/Time';
-import Weather from './Components/Weather/Weather';
 import News from './Components/News/News';
 
 function App() {
-
-
-
-
-
-
   return (
     <div className="App">
       <div Id="tempIndicator">
